@@ -1,16 +1,21 @@
 {
   "name": "dataset-hg07",
-  "main": "index.ts",
-  "module": "index.ts",
+  "main": "index.js",
+  "module": "index.js",
+  "types": "./index.d.ts",
   "type": "module",
   "private": true,
   "exports": {
-    ".": "./index.ts",
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
     "./samples/*": "./samples/*",
     "./samples/manifest.json": "./samples/manifest.json"
   },
   "files": [
-    "index.ts",
+    "index.js",
+    "index.d.ts",
     "samples",
     "README.md",
     "LICENSE"
